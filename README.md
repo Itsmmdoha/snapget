@@ -1,8 +1,6 @@
 I don't have enough time to build this now, I make it someday! Below is the knowledge I've gathered so far,
 
 # How does a download manager work?
-On a high level, a download manager, also known as a **DM**, facilitates faster downloads by utilizing a technique called "**multi-threading**" Multi-threading allows a **DM** to download different segments of a single file simultaneously. This approach improves download speed by taking advantage of available bandwidth. Here's a corrected explanation:
-
 A download manager employs a method known as "multi-threading" to enhance the download process. In multi-threading, the download manager divides a file into smaller segments, often referred to as "**chunks**" Each of these chunks is then downloaded by a separate thread. To illustrate, consider a scenario where the file is 12 megabytes in size, and the download manager employs 4 threads. In this case, the first thread would download the initial 4 megabytes, the subsequent thread would retrieve the next 4 megabytes, and so forth. After all the chunks have been downloaded, the download manager assembles them into a single cohesive file, effectively completing the download. We'll talk more about it in technical terms later.
 
 This approach optimizes the download process by utilizing multiple threads to download different parts of the file concurrently, resulting in improved speed and efficiency.
@@ -15,7 +13,6 @@ This approach optimizes the download process by utilizing multiple threads to do
 
 
 ## Determining filename & extension
-Certainly, here's the explanation in the requested format, along with HTTP response examples:
 
 A download manager determines the file type (also known as the file extension) using a combination of methods that involve the HTTP response headers, the URL, and often the content of the downloaded file itself. Here's how it typically works:
 

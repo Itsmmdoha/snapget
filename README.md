@@ -1,4 +1,4 @@
-I don't have enough time to build this now, I make it someday! Below is the knowledge I've gathered so far,
+I don't have enough time to build this now, I'll make it someday! Below is the knowledge base I've gathered so far,
 
 # How does a download manager work?
 A download manager employs a method known as "multi-threading" to enhance the download process. In multi-threading, the download manager divides a file into smaller segments, often referred to as "**chunks**" Each of these chunks is then downloaded by a separate thread. To illustrate, consider a scenario where the file is 12 megabytes in size, and the download manager employs 4 threads. In this case, the first thread would download the initial 4 megabytes, the subsequent thread would retrieve the next 4 megabytes, and so forth. After all the chunks have been downloaded, the download manager assembles them into a single cohesive file, effectively completing the download. We'll talk more about it in technical terms later.
